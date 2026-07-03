@@ -262,7 +262,7 @@ No manual execution of intermediate scripts is required.
 
 # Course Information
 
-**Course:** CS401 – Essentials of SAS
+**Course:** ISS173 – Essentials of SAS
 
 **Project:** Enterprise Data Pipeline & Analytical Insights Portfolio
 
