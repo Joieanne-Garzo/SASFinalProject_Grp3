@@ -273,7 +273,7 @@ No manual execution of intermediate scripts is required.
 # Team Members
 
 - John Kenneth P. Alon
-- Johan Takkis A. Villafranca
+- Johan Takkis V. Villafranca
 - Joieanne A. Garzo
 - Paul Joshua A. Gregorio
 
