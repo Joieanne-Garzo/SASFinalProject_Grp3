@@ -3,6 +3,16 @@
 =========================================================*/
 
 data MYLIB.telco_final;
+	%let HIGH_CHARGE = 80;
+	%let HIGH_TENURE = 24;
+	
+	%let LOW = 40;
+	%let HIGH = 80;
+
+	%let NEW = 12;
+	%let DEVELOPING = 24;
+	%let LOYAL = 48;
+
     set MYLIB.telco_merged;
 
     /* Estimated Annual Revenue */
@@ -13,13 +23,13 @@ data MYLIB.telco_final;
 
     length TenureGroup $25;
 
-    if tenure <= 12 then
+    if tenure <= &NEW then
         TenureGroup = "NEW CUSTOMER";
 
-    else if tenure <= 24 then
+    else if tenure <= &DEVELOPING then
         TenureGroup = "DEVELOPING";
 
-    else if tenure <= 48 then
+    else if tenure <= &LOYAL then
         TenureGroup = "ESTABLISHED";
 
     else
@@ -29,23 +39,24 @@ data MYLIB.telco_final;
 
     length ChargeLevel $10;
 
-    if MonthlyCharges < 40 then
+    if MonthlyCharges < &LOW then
         ChargeLevel = "LOW";
 
-    else if MonthlyCharges < 80 then
+    else if MonthlyCharges < &HIGH then
         ChargeLevel = "MEDIUM";
 
     else
         ChargeLevel = "HIGH";
 
     /* Customer Value */
-
+	
     length CustomerValue $15;
 
-    if MonthlyCharges >= 80 and tenure >= 24 then
+    if MonthlyCharges >= &HIGH_CHARGE and tenure >= &HIGH_TENURE then
         CustomerValue = "HIGH VALUE";
     else
         CustomerValue = "STANDARD";
+
 
 run;
 
