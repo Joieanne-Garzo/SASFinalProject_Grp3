@@ -1,6 +1,52 @@
 # SASFinalProject_Grp3
 Enterprise Data Pipeline using SAS
 
+## Overview
+
+This repository contains our final project for **CS401 - Essentials of SAS**.
+
+The project develops a complete end-to-end data pipeline using **SAS OnDemand for Academics**, following the six-stage workflow required by the course.
+
+The objective is to ingest, clean, transform, analyze, and visualize telecommunications infrastructure data to generate meaningful business insights for executive decision-making.
+
+---
+
+## Project Objectives
+
+- Import raw telecom datasets into SAS
+- Clean and standardize data
+- Merge related datasets
+- Compute analytical metrics
+- Apply advanced SAS techniques
+- Produce executive-level insights and visualizations
+
+---
+# Pipeline Workflow
+
+```
+Raw Data
+    │
+    ▼
+Import
+    │
+    ▼
+Data Cleaning
+    │
+    ▼
+Transformation & Joins
+    │
+    ▼
+Calculations
+    │
+    ▼
+SAS Analytics
+    │
+    ▼
+Visualization
+    │
+    ▼
+Business Insights
+```
 
 # Git Workflow
 
