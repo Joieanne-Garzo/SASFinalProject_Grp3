@@ -1,4 +1,4 @@
-# 📊 Enterprise Telecom Data Pipeline using SAS
+#  Enterprise Telecom Data Pipeline using SAS
 
 > **CS401 – Essentials of SAS Final Project**
 
